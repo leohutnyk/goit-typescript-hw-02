@@ -1,0 +1,103 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 156px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, transparent, rgb(52, 52, 68));
+  padding: 20px;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: black;
+  margin-bottom: 10px;
+}
+p {
+  color: black;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  font-size: 1.5rem; /* Розмір шрифта, як в інпуті */
+  padding: 12px 20px; /* Відступи всередині кнопки */
+  border: 2px solid #ff6347; /* Така ж яскрава рамка, як і в інпуті */
+  border-radius: 8px; /* Заокруглені кути */
+  background-color: rgb(235, 230, 230); /* Яскравий фон, як у інпута */
+  color: #333; /* Колір тексту кнопки */
+  cursor: pointer; /* Курсор при наведенні */
+  transition: all 0.3s ease; /* Плавні переходи */
+}
+
+/* Стилі для кнопки при наведенні */
+button:hover {
+  background-color: #ff6347; /* Зміна фону на помаранчево-червоний */
+  border-color: #ff4500; /* Зміна кольору рамки при наведенні */
+  color: white; /* Зміна кольору тексту на білий при наведенні */
+}
+
+/* Стилі для кнопки при фокусі (коли кнопка активна) */
+button:focus {
+  outline: none; /* Вимикаємо стандартну обводку при фокусі */
+  box-shadow: 0 0 5px 3px rgba(255, 99, 71, 0.5); /* Легка тінь для фокусу */
+}
+input {
+  font-size: 1.5rem; /* Великий шрифт */
+  padding: 12px 20px; /* Великі відступи для комфортного введення */
+  border: 2px solid #ff6347; /* Яскрава рамка */
+  border-radius: 8px; /* Заокруглені кути */
+  background-color: rgb(235, 230, 230); /* Яскравий фон */
+  color: #333; /* Колір тексту */
+  transition: all 0.3s ease; /* Плавні переходи при наведенні */
+  width: 100%; /* Розтягується на всю ширину контейнера */
+  max-width: 400px; /* Обмеження максимального розміру */
+}
+
+/* Стилі для інпута при наведенні */
+input:hover {
+  border-color: #ff4500; /* Зміна кольору рамки при наведенні */
+  background-color: #fff; /* Зміна фону */
+}
+
+/* Стилі для інпута при фокусі (коли він активний) */
+input:focus {
+  border-color: #ff4500; /* Зміна кольору рамки при фокусі */
+  background-color: #fff; /* Зміна фону при фокусі */
+  outline: none; /* Вимикає стандартну обводку при фокусі */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
